@@ -1,0 +1,138 @@
+:root{
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--VeryDarkBlue: hsl(234, 12%, 34%);
+--GrayishBlue: hsl(229, 6%, 66%);
+--VeryLightGray: hsl(0, 0%, 98%);
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 15px;
+    font-family: 'poppins';
+    display: flex;
+    flex-direction: column;
+}
+.tituloinicial{
+    text-align: center;
+    color: var(--GrayishBlue);
+    font-weight: 200;
+    margin-top: 0px;
+}
+.tituloinicial span{
+    color: var(--VeryDarkBlue);
+    font-weight:600; 
+    font-size: 23px;
+}
+.tituloinicial h4{
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+.tituloinicial h3{
+    margin-top: 0px;
+}
+.tituloinicial span h3{
+    margin-top: 0px;
+}
+.inicio{
+    color: var(--GrayishBlue);
+    text-align: center;
+}
+.contenedor{
+    display: grid;
+    position: relative;
+    height: 16rem;
+    margin-bottom: 20px;
+    margin-left: 10x;
+    margin-right: 10px;
+    border-radius: 2%;
+    box-shadow: -11px 7px 32px -10px rgba(0,0,0,0.75);
+}
+.contenido{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+    padding-right: 15px;
+}
+.titulo{
+    display: flex;
+    color: var(--VeryDarkBlue);
+}
+.titulo h2{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.texto{
+    display: flex;
+    align-content: flex-start;
+}
+.texto p{
+    margin-top: 5px;
+}
+.contenedor1{
+    margin-top: 50px;
+    border-top:  4px solid var(--Cyan);
+}
+.contenedor1 img{
+    position: absolute;
+    left: 75%;
+    top: 50%;
+}
+.contenedor2{
+    border-top:  4px solid var(--Red);
+}
+.contenedor2 img{
+    position: absolute;
+    left: 75%;
+    top: 55%;
+}
+.contenedor3{
+    border-top:  4px solid var(--Orange);
+}
+.contenedor3 img{
+    position: absolute;
+    left: 75%;
+    top: 50%;
+}
+.contenedor4{
+    border-top:  4px solid var(--Blue);
+}
+.contenedor4 img{
+    position: absolute;
+    left: 75%;
+    top: 50%;
+}
+@media (min-width: 768px){
+    .tituloinicial{
+        
+    }
+    .Scontenedor{
+        margin-top: 200px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .contenedor{
+        max-width: 350px;
+        max-height: 400px;
+        font-size: 20px;
+    }
+    .contenedor1{
+        justify-self: end;
+        margin-top: 0px;
+    }
+    .contenedor3{
+        justify-self: end;
+    }
+}
+    
+
